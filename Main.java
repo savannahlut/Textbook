@@ -10,5 +10,11 @@ public class Main{
 
         Textbook math = new Textbook("Calculus", 45.25, 1);
         System.out.println(bio2015.canSubstituteFor(math));
+
+        System.out.println("My Test Case: ");
+        Textbook csa2008 = new Textbook("AP Computer Science", 37.85, 5); 
+        Textbook csa2007 = new Textbook("AP Computer Science", 46.65, 4); 
+        System.out.println(csa2008.canSubstituteFor(csa2007)); // should return true
+        System.out.println(csa2007.canSubstituteFor(csa2008)); // should return false
     }
 }
