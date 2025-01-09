@@ -12,18 +12,3 @@ public class Book{
         return title + "-" + price;
     }
 }
-public class Textbook extends Book{
-    private int editionNum;
-    public Textbook(String bookTitle, double bookPrice, int ed){
-        super(bookTitle, bookPrice);
-        editionNum = ed;
-    }
-
-    @Override public String getBookInfo(){
-        return super.getBookInfo() + "-" + editionNum ;
-    }
-
-    public booelan canSubstituteFor(){
-        /* to implement */
-    }
-}
